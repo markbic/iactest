@@ -10,7 +10,7 @@ data "aws_s3_bucket" "log_bucket" {
 
 resource "aws_s3_bucket" "bucket" {
  bucket = "my_insecure_bucket"
- acl = "public-read"
+ acl = "public-read-write"
 }
 data "aws_vpc" "vpc" {
  tags = {
